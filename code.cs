@@ -28,3 +28,9 @@
             }
         }
     }
+    public int CompareTo(object obj)
+    {
+        return (obj is SemVersion semVersion)
+            ? CompareTo(semVersion)
+            : -1;
+    }
