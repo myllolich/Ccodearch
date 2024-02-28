@@ -20,7 +20,7 @@
                && Patch == other.Patch
                && string.Equals(PreRelease, other.PreRelease, StringComparison.OrdinalIgnoreCase)
                && string.Equals(Meta, other.Meta, StringComparison.OrdinalIgnoreCase);
-    }
+    }//yes
 
           return (string.IsNullOrEmpty(Meta) != string.IsNullOrEmpty(other.Meta))
                     ? string.IsNullOrEmpty(Meta) ? 1 : -1
